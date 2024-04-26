@@ -1,0 +1,30 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.fundoimg{
+background-image: url('../../../assets/imgHeaderfooter.png');
+height: 300px;
+
+
+}
+
+mat-tab-group{
+  display: flex;
+  position: relative;
+  padding-top: 200px;
+
+  z-index: 1;
+}
+
+mat-tab-label {
+  margin-top: 10px;
+}
+
+
+
