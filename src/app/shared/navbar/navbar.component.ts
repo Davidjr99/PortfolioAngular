@@ -12,10 +12,13 @@ export class NavbarComponent {
   constructor(private router: Router){
 
   }
+  activeTabIndex: number | null = null;
+
+
   navegarParaRota(rota: string){
 
     this.router.navigate([rota]);
-    console.log('teste')
+
   }
 
 
@@ -26,9 +29,18 @@ onTabChange(event: MatTabChangeEvent) {
       break;
     case 1:
       this.navegarParaRota('/meus-projetos');
-      break;
-    default:
-      break;
+
+
+
   }
+}
+isTabActive(index: number): boolean {
+  return this.activeTabIndex === index;
+
+}
+
+obterRotaPorIndice(index: number): string {
+  // Lógica para retornar a rota correspondente ao índice da aba
+  return index === 0 ? '/' : '/meus-projetos';
 }
 }

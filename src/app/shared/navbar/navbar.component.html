@@ -1,23 +1,28 @@
 
   <div class="fundoimg">
 
-
-
-
-
 <mat-tab-group animationDuration="2000ms"  (selectedTabChange)="onTabChange($event)">
 
-  <mat-tab label="Sobre Mim" >
+  <mat-tab label ="Sobre Mim" >
+    <ng-container *ngIf="isTabActive(0)">
+
+      <sobre-mim></sobre-mim>
+
+    </ng-container>
 
 
   </mat-tab>
 
 
-  <mat-tab label="Meus Projetos" >
+  <mat-tab label="Meus Projetos">
+    <ng-container *ngIf="isTabActive(1)">
+      <br>
+      <meus-projetos></meus-projetos>
+    </ng-container>
 
   </mat-tab>
 
 </mat-tab-group>
-<router-outlet></router-outlet>
+<router-outlet ></router-outlet>
 </div>
 

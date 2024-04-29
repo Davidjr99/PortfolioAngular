@@ -10,6 +10,8 @@ import { MatRippleModule } from '@angular/material/core';
 import { MatIconModule } from '@angular/material/icon';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from '../../app-routing.module';
+import { SobreMimModule } from '../../pages/sobre-mim/sobre-mim.module';
+import { MeusProjetosModule } from '../../pages/meus-projetos/meus-projetos.module';
 
 
 @NgModule({
@@ -21,7 +23,10 @@ import { AppRoutingModule } from '../../app-routing.module';
     MatRippleModule,
     MatIconModule,
     RouterModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SobreMimModule,
+    MeusProjetosModule
+
 
   ],
   exports: [

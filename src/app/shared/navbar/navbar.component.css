@@ -8,10 +8,20 @@
 }
 
 .fundoimg{
+position: relative;
 background-image: url('../../../assets/imgHeaderfooter.png');
 height: 300px;
-
-
+}
+::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url('../../../assets/imgHeaderfooter.png') center/cover no-repeat;
+  filter: blur(4px);
+  z-index: -1;
 }
 
 mat-tab-group{
@@ -19,12 +29,15 @@ mat-tab-group{
   position: relative;
   padding-top: 200px;
 
+
   z-index: 1;
 }
 
 mat-tab-label {
-  margin-top: 10px;
+  margin-top: 100px;
+
 }
+
 
 
 
