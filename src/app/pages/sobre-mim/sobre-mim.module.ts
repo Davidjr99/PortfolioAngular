@@ -4,6 +4,8 @@ import { SobreMimComponent } from './sobre-mim.component';
 import { RouterModule } from '@angular/router';
 
 import {MatCardModule} from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 
 
@@ -13,6 +15,9 @@ import {MatCardModule} from '@angular/material/card';
     CommonModule,
     RouterModule,
     MatCardModule,
+    MatButtonModule,
+    FlexLayoutModule,
+
 
   ],
   exports: [
