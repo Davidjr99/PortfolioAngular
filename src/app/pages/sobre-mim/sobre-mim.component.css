@@ -1,7 +1,8 @@
 *{
-  padding: 0;
+
   margin: 0;
   border: 0;
+
 
 }
 .conteudoSobreMim{
@@ -74,8 +75,15 @@ user-select: none;
 .apresentacao{
   height: 300px;
   width: 100%;
+
   background: linear-gradient(to bottom, #3f51b5, transparent);
   animation: 2s ease-out 0s 1 slideInFromRight;
+  box-shadow: 0px 0px 30px rgba(0,0,0,0.5);
+  user-select: none;
+
+  &:hover{
+    transform: scale(1.01);
+  }
 
   ::before {
     content: '';
@@ -88,8 +96,7 @@ user-select: none;
     animation: borderFlow 2s linear infinite;
 
   }
-  user-select: none;
-
+  
 
 }
 
@@ -111,9 +118,6 @@ user-select: none;
 
 }
 
-
-
-/* Daqui para baixo é sobre as formações e o carrossel em cards */
 .formacoes{
   display: flex;
   justify-content: space-around;
@@ -133,10 +137,11 @@ user-select: none;
 }
 
 mat-card-header{
-  display:flex;
   justify-content: center;
   align-items: center;
   user-select: none;
+  padding-top: 4px;
+
 }
 mat-card-title{
 
@@ -144,9 +149,14 @@ mat-card-title{
   font-size: 25px;
   margin-top: 100px;
   justify-content: center;
-  align-items: center;
+  text-align: center;
   user-select: none;
+  padding-top: 100px;
 
+}
+mat-card-subtitle{
+  display: flex;
+  text-align: center;
 }
 mat-card-footer{
   display:flex;
@@ -154,6 +164,7 @@ mat-card-footer{
   align-items: center;
   margin-top: 100px;
   user-select: none;
+  padding-top: 115px;
 
 }
 
@@ -168,33 +179,31 @@ mat-card-footer{
   user-select: none;
 }
 .imglogoEstacio{
+
   width: 140px;
   height: 120px;
 }
 .imglogoproa{
   width: 150px;
-  height: 150px;
+  height: 120px;
   user-select: none;
 }
 
 .card1{
-  display: flex;
   height: 550px;
   width: 330px;
   padding-left: 15px;
   background: linear-gradient(to bottom, #3f51b5, transparent);
   border-radius: 20px;
-
+  user-select: none;
+  box-shadow: 0px 0px 20px lightblue;
   &:hover{
     transform: scale(1.05);
     border: 2px solid lightblue;
-
   }
-  user-select: none;
 }
 
 .card2{
-  display: flex;
   height: 550px;
   width: 330px;
   background: linear-gradient(to bottom, #3f51b5, transparent);
@@ -204,9 +213,9 @@ mat-card-footer{
     border: 2px solid lightblue;
   }
   user-select: none;
+  box-shadow: 0px 0px 20px lightblue;
 }
 .card3{
-  display: flex;
   height: 550px;
   width: 330px;
   background: linear-gradient(to bottom, #3f51b5, transparent);
@@ -216,10 +225,11 @@ mat-card-footer{
     transform: scale(1.05);
     border: 2px solid lightblue;
   }
-
+  user-select: none;
+  box-shadow: 0px 0px 20px lightblue;
 }
+
 .card4{
-  display: flex;
   height: 550px;
   width: 330px;
   background: linear-gradient(to bottom, #3f51b5, transparent);
@@ -353,4 +363,6 @@ mat-card-footer{
   mat-card-title{
     text-align: center;
   }
+  user-select: none;
+  box-shadow: 0px 0px 20px lightblue;
 }
