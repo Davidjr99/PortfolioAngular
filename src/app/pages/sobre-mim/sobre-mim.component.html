@@ -1,8 +1,8 @@
-<div class="conteudoSobreMim">
-  <img class="perfil" src="../../../assets/imgEu.png" alt="imgPerfil" />
+<div class="conteudoSobreMim"  >
+  <img class="perfil" src="../../../assets/imgEu.png" alt="imgPerfil" style="max-width: 100%;"/>
 
   <div class="minhasInfos">
-    <h2>David Oliveira De Souza Junior</h2>
+    <h2>{{name}}</h2>
 
     <ul class="minhasContas">
       <li>
@@ -36,22 +36,27 @@
   </div>
 </div>
 
-<div class="apresentacao">
+
+
+<div class="apresentacao" fxLayout="column" fxLayoutAlign="start stretch">
+
+
+
   <mat-card class="apresentacao">
     <h1 class="tituloSobreMim">Sobre Mim:</h1>
     <mat-card-subtitle class="textoSobreMim">
-      Um estudante de Gestão de TI de 22 anos de Osasco, SP. Completei um curso
-      de Programador Web Java no Instituto PROA em 2023 e atualmente estou
-      aprimorando minhas habilidades em Angular no Senac.
-      <br /><br />
-      Estou ganhando experiência prática como estagiário em Desenvolvimento de
-      Sistemas na Montreal Informática. Minha paixão pela tecnologia me motiva a
-      buscar uma carreira sólida neste setor em crescimento.
+    {{sobreMim}}
     </mat-card-subtitle>
+    
   </mat-card>
+  
 </div>
 
+
+
+<h2 class="tituloFormacoes">Minhas Formações:</h2>
 <div class="formacoes">
+
   <mat-card class="card1">
     <mat-card-header>
       <img
@@ -60,7 +65,7 @@
       />
     </mat-card-header>
 
-    <mat-card-title> Gestão Da Tecnologia Da informação </mat-card-title>
+    <mat-card-title> Gestão Da Tecnologia  Da  Informação </mat-card-title>
 
     <mat-card-footer>
       <img
@@ -119,6 +124,7 @@
     <mat-card-footer>
       <img
         class="imglogo"
+
         src="../../../assets/imgyasigi-removebg-preview.png"
       />
     </mat-card-footer>

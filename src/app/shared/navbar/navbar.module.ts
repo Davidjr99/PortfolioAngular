@@ -12,6 +12,7 @@ import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from '../../app-routing.module';
 import { SobreMimModule } from '../../pages/sobre-mim/sobre-mim.module';
 import { MeusProjetosModule } from '../../pages/meus-projetos/meus-projetos.module';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { MeusProjetosModule } from '../../pages/meus-projetos/meus-projetos.modu
     RouterModule,
     AppRoutingModule,
     SobreMimModule,
-    MeusProjetosModule
+    MeusProjetosModule,
+    FlexLayoutModule
 
 
   ],
