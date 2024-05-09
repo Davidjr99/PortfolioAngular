@@ -6,6 +6,7 @@ import { RouterModule } from '@angular/router';
 import {MatCardModule} from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { CarrouselModule } from '../../shared/carrousel/carrousel.module';
 
 
 
@@ -17,6 +18,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatCardModule,
     MatButtonModule,
     FlexLayoutModule,
+    CarrouselModule
 
 
   ],

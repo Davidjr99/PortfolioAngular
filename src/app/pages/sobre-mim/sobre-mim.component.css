@@ -1,46 +1,55 @@
-*{
-
+* {
   margin: 0;
   border: 0;
-
-
 }
-.conteudoSobreMim{
+
+.carrousel{
+  display: block;
+  text-align: center;
+  align-items: center;
+  background-color: white;
+  overflow: hidden;
+  padding-top: 30px;
+}
+.conteudoSobreMim {
   display: flex;
+  overflow-y: hidden;
   justify-content: center;
   flex-direction: row;
   padding: 120px;
   background-color: white;
-  height: 300px;
+  height: 530px;
+  width: 90%;
   animation: 2s ease-out 0s 1 slideInFromRight;
 }
 
-h2{
- font-size: 50px;
- padding-left: 80px;
- user-select: none;
- animation: 2s ease-out 0s 1 slideInFromRight;
 
+h2 {
+  font-size: 50px;
+  white-space: nowrap;
+  user-select: none;
+
+  animation: 2s ease-out 0s 1 slideInFromRight;
 }
-.perfil{
-
+.perfil {
   height: 380px;
   width: 350px;
   user-select: none;
   animation: 2s ease-out 0s 1 slideInFromRight;
-  &:hover{
+
+  &:hover {
     transform: scale(1.09);
   }
-
 }
 
-.minhasInfos{
-flex-direction: row;
-list-style-type: none;
-justify-content: space-around;
-user-select: none;
+.minhasInfos {
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: space-around;
+  user-select: none;
+
 }
-.minhasContas{
+.minhasContas {
   display: flex;
   padding-left: 150px;
   padding-top: 150px;
@@ -50,57 +59,67 @@ user-select: none;
   animation: 2s ease-out 0s 1 slideInFromRight;
 }
 
-.github{
+.github {
   height: 130px;
-  &:hover{
+  &:hover {
     transform: scale(1.09);
   }
   user-select: none;
 }
-.linkedin{
+.linkedin {
   height: 150px;
-  &:hover{
+  &:hover {
     transform: scale(1.09);
   }
   user-select: none;
 }
-.whats{
+.whats {
   height: 150px;
-  &:hover{
+  &:hover {
     transform: scale(1.09);
   }
   user-select: none;
 }
 
-.apresentacao{
+.apresentacao {
   height: 300px;
   width: 100%;
-
+  overflow: hidden;
   background: linear-gradient(to bottom, #3f51b5, transparent);
   animation: 2s ease-out 0s 1 slideInFromRight;
-  box-shadow: 0px 0px 30px rgba(0,0,0,0.5);
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
   user-select: none;
 
-  &:hover{
-    transform: scale(1.01);
-  }
-
   ::before {
-    content: '';
+    content: "";
     position: absolute;
     top: -2px;
     left: -2px;
     right: -2px;
     bottom: -2px;
     border: 2px solid lightblue;
-    animation: borderFlow 2s linear infinite;
-
+    animation: borderFlow 5s linear infinite !important;
   }
-
-
 }
 
-.tituloSobreMim{
+.apresentacao:hover {
+  transform: scale(1.01);
+}
+
+@keyframes borderFlow {
+  0% {
+    border-color: whitesmoke;
+  }
+
+  50% {
+    border-color: lightblue;
+  }
+
+  100% {
+    border-color: #3f51b5;
+  }
+}
+.tituloSobreMim {
   display: flex;
   font-size: 30px;
   color: aliceblue;
@@ -108,17 +127,15 @@ user-select: none;
   padding-top: 20px;
   user-select: none;
 }
-.textoSobreMim{
+.textoSobreMim {
   display: flex;
   font-size: 25px;
   color: aliceblue;
   padding: 35px;
   user-select: none;
-
-
 }
 
-.formacoes{
+.formacoes {
   display: flex;
   justify-content: space-around;
   flex-direction: row;
@@ -127,67 +144,60 @@ user-select: none;
   margin-top: 20px;
   background-color: white;
   user-select: none;
-
 }
-.tituloFormacoes{
+.tituloFormacoes {
   font-size: 40px;
   margin-top: 90px;
   color: gray;
-
 }
 
-mat-card-header{
+mat-card-header {
   justify-content: center;
   align-items: center;
   user-select: none;
   padding-top: 4px;
-
 }
-mat-card-title{
-
-  display:flex;
+mat-card-title {
+  display: flex;
   font-size: 25px;
   justify-content: center;
   text-align: center;
   user-select: none;
   padding-top: 100px;
-
 }
-mat-card-subtitle{
+mat-card-subtitle {
   display: flex;
   text-align: center;
 }
-mat-card-footer{
-  display:flex;
+mat-card-footer {
+  display: flex;
   justify-content: center;
   align-items: center;
   user-select: none;
   padding-top: 115px;
-
 }
 
-.imgbeca{
+.imgbeca {
   height: 90px;
   width: 180px;
   user-select: none;
 }
-.imglogo{
+.imglogo {
   width: 150px;
   height: 150px;
   user-select: none;
 }
-.imglogoEstacio{
-
+.imglogoEstacio {
   width: 140px;
   height: 120px;
 }
-.imglogoproa{
+.imglogoproa {
   width: 150px;
   height: 120px;
   user-select: none;
 }
 
-.card1{
+.card1 {
   height: 500px;
   width: 330px;
   padding-left: 15px;
@@ -195,31 +205,31 @@ mat-card-footer{
   border-radius: 20px;
   user-select: none;
   box-shadow: 0px 0px 20px lightblue;
-  &:hover{
+  &:hover {
     transform: scale(1.05);
     border: 2px solid lightblue;
   }
 }
 
-.card2{
+.card2 {
   height: 500px;
   width: 330px;
   background: linear-gradient(to bottom, #3f51b5, transparent);
   border-radius: 20px;
-  &:hover{
+  &:hover {
     transform: scale(1.05);
     border: 2px solid lightblue;
   }
   user-select: none;
   box-shadow: 0px 0px 20px lightblue;
 }
-.card3{
+.card3 {
   height: 500px;
   width: 330px;
   background: linear-gradient(to bottom, #3f51b5, transparent);
   border-radius: 20px;
   user-select: none;
-  &:hover{
+  &:hover {
     transform: scale(1.05);
     border: 2px solid lightblue;
   }
@@ -227,26 +237,16 @@ mat-card-footer{
   box-shadow: 0px 0px 20px lightblue;
 }
 
-.card4{
+.card4 {
   height: 500px;
   width: 330px;
   background: linear-gradient(to bottom, #3f51b5, transparent);
   border-radius: 20px;
   user-select: none;
-  &:hover{
+  &:hover {
     transform: scale(1.05);
     border: 2px solid lightblue;
   }
-
-}
-
-
-@keyframes borderFlow {
-  0% { border-color: whitesmoke; }
-
-  50% { border-color: lightblue; }
-
-  100% { border-color: #3f51b5; }
 }
 
 @keyframes slideInFromRight {
@@ -261,104 +261,137 @@ mat-card-footer{
 }
 
 @media only screen and (max-width: 430px) and (max-height: 932px) {
-  .conteudoSobreMim {
-      width: 100%;
-      height: auto;
+  .carrousel{
+    display: block;
+    text-align: center;
+    align-items: center;
+    background-color: white;
+    overflow: hidden;
+    padding: 40px 0 1px 150px;
 
-      flex-direction: row; /* Change flex direction for smaller screens */
   }
-  .minhasInfos{
+  .conteudoSobreMim {
+    display: flex;
+    overflow-x: hidden;
+    height: 80px;
+    width: auto;
+    flex-direction: row; /* Change flex direction for smaller screens */
+    padding-bottom: 200px;
+    padding-top: 50px;
+  }
+  img .perfil{
+    display: flex;
+    align-items: center;
+
+  }
+  .minhasInfos {
     flex-direction: row;
   }
 
-
   h2 {
-      font-size: 15px; /* Decrease font size for smaller screens */
-      text-align: start;
-      padding-right: 300px;
-
+    font-size: 15px; /* Decrease font size for smaller screens */
+    white-space: nowrap;
+    padding-left: 15px;
   }
 
   .perfil {
-      padding-left: 20px;
-      height: 150px; /* Reduce image size for smaller screens */
-      width: 120px; /* Reduce image size for smaller screens */
+
+    height: 150px; /* Reduce image size for smaller screens */
+    width: 120px; /* Reduce image size for smaller screens */
   }
 
   .minhasContas {
-      height: 10px;
-      padding: 10px;
-      width: auto;
-      margin-left: 20px;
-      flex-direction: row;
-
+    height: 10px;
+    padding: 10px;
+    margin-left: 20px;
+    flex-direction: row;
   }
-  .github{
+  .github {
     height: 40px;
-    padding: 0;
+    padding: 0%;
     margin: 0;
   }
-  .linkedin{
-    height: 40px;
-    padding: 0;
+  .linkedin {
+    height: 48px;
+
+    padding: 0%;
     margin: 0;
   }
-  .whats{
-    height: 40px;
-    padding: 0;
-    margin-right: 300px;
+  .whats {
+    height: 45px;
+    padding: 0%;
+
   }
-
-
-
 
   .apresentacao {
-      padding: 20px; /* Adjust padding for smaller screens */
-      height: auto;
+    padding: 20px; /* Adjust padding for smaller screens */
+    height: auto;
   }
 
   .tituloSobreMim {
-      font-size: 20px; /* Decrease font size for smaller screens */
-      padding-left: 15px; /* Adjust padding for smaller screens */
-      padding-top: 10px; /* Adjust padding for smaller screens */
+    font-size: 20px; /* Decrease font size for smaller screens */
+    padding-left: 15px; /* Adjust padding for smaller screens */
+    padding-top: 10px; /* Adjust padding for smaller screens */
   }
 
   .textoSobreMim {
-      font-size: 18px; /* Decrease font size for smaller screens */
-      padding: 20px; /* Adjust padding for smaller screens */
+    font-size: 18px; /* Decrease font size for smaller screens */
+    padding: 20px; /* Adjust padding for smaller screens */
   }
 
   .tituloFormacoes {
-      font-size: 20px; /* Decrease font size for smaller screens */
-      padding-left: 15px; /* Adjust padding for smaller screens */
-
+    font-size: 20px; /* Decrease font size for smaller screens */
+    padding-left: 15px; /* Adjust padding for smaller screens */
   }
-  .formacoes{
+  .formacoes {
     padding-top: 10px;
     flex-direction: column;
     align-items: center;
     display: flex;
     justify-content: center;
-
   }
 
-  .card1, .card2, .card3, .card4 {
-      height: auto; /* Adjust card height for smaller screens */
-      width: 300px; /* Adjust card width for smaller screens */
-      margin: 25px;
-
+  .card1,
+  .card2,
+  .card3,
+  .card4 {
+    height: 300px; /* Adjust card height for smaller screens */
+    width: 300px; /* Adjust card width for smaller screens */
+    margin: 25px;
+    flex-wrap: wrap;
+    position: relative;
   }
 
   .imgbeca {
-      height: 7auto0px; /* Adjust image height for smaller screens */
-      width: 140px; /* Adjust image width for smaller screens */
+    display: flex;
+    top: 0%;
+    left: 0%;
+    height: 60px; /* Adjust image height for smaller screens */
+    width: 140px; /* Adjust image width for smaller screens */
   }
 
-  .imglogoEstacio, .imglogoproa, .imglogo {
-      width: 120px; /* Adjust image width for smaller screens */
-      height: auto; /* Adjust image height for smaller screens */
+
+  .imglogoproa,
+  .imglogo,
+  .imglogoEstacio {
+    width: 120px; /* Adjust image width for smaller screens */
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    height: 90px;
   }
-  mat-card-title{
+
+
+
+  mat-card-title {
     text-align: center;
+    padding: 15%;
   }
+  mat-card-footer{
+    position: absolute; /* Adicione position: absolute; */
+    bottom: 0; /* Alinhe o rodapé ao final do card */
+    left: 0; /* Alinhe o rodapé à esquerda do card */
+    width: 100%; /* Defina a largura para ocupar todo o card */
+  }
+
 }

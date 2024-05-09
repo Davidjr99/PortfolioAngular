@@ -11,9 +11,12 @@ import { SobreMimModule } from './pages/sobre-mim/sobre-mim.module';
 import { MeusProjetosModule } from './pages/meus-projetos/meus-projetos.module';
 import { RouterModule } from '@angular/router';
 
+import { CarrouselModule } from './shared/carrousel/carrousel.module';
+
 @NgModule({
     declarations: [
         AppComponent,
+        
 
     ],
     providers: [
@@ -27,7 +30,8 @@ import { RouterModule } from '@angular/router';
         NavbarModule,
         SobreMimModule,
         MeusProjetosModule,
-        RouterModule
+        RouterModule,
+        CarrouselModule
 
     ]
 })

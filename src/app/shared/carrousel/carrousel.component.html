@@ -1,0 +1,7 @@
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item" *ngFor="let image of images; let i = index" [class.active]="i === currentImageIndex">
+      <img [src]="image" class="d-block w-100" alt="...">
+    </div>
+  </div>
+</div>
