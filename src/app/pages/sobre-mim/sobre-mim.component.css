@@ -26,6 +26,7 @@
 
 h2 {
   font-size: 50px;
+  color: gray;
   white-space: nowrap;
   user-select: none;
 
@@ -147,7 +148,7 @@ h2 {
 }
 .tituloFormacoes {
   font-size: 40px;
-  margin-top: 90px;
+  margin-top: 30px;
   color: gray;
 }
 
@@ -160,6 +161,7 @@ mat-card-header {
 mat-card-title {
   display: flex;
   font-size: 25px;
+  color: white;
   justify-content: center;
   text-align: center;
   user-select: none;
@@ -201,13 +203,13 @@ mat-card-footer {
   height: 500px;
   width: 330px;
   padding-left: 15px;
-  background: linear-gradient(to bottom, #3f51b5, transparent);
+  background: linear-gradient(to bottom, #6699CC, transparent);
   border-radius: 20px;
   user-select: none;
-  box-shadow: 0px 0px 20px lightblue;
+  box-shadow: 0px 0px 20px #3f51b5;
   &:hover {
     transform: scale(1.05);
-    border: 2px solid lightblue;
+    border: 1px solid lightblue;
   }
 }
 
@@ -215,10 +217,11 @@ mat-card-footer {
   height: 500px;
   width: 330px;
   background: linear-gradient(to bottom, #3f51b5, transparent);
+  box-shadow: 0px 0px 20px #6699CC;
   border-radius: 20px;
   &:hover {
     transform: scale(1.05);
-    border: 2px solid lightblue;
+    border: 1px solid lightblue;
   }
   user-select: none;
   box-shadow: 0px 0px 20px lightblue;
@@ -226,12 +229,13 @@ mat-card-footer {
 .card3 {
   height: 500px;
   width: 330px;
-  background: linear-gradient(to bottom, #3f51b5, transparent);
+  background: linear-gradient(to bottom, #6699CC, transparent);
   border-radius: 20px;
+  box-shadow: 0px 0px 20px #3f51b5 !important;
   user-select: none;
   &:hover {
     transform: scale(1.05);
-    border: 2px solid lightblue;
+    border: 1px solid lightblue;
   }
   user-select: none;
   box-shadow: 0px 0px 20px lightblue;
@@ -241,11 +245,12 @@ mat-card-footer {
   height: 500px;
   width: 330px;
   background: linear-gradient(to bottom, #3f51b5, transparent);
+  box-shadow: 0px 0px 20px #6699CC;
   border-radius: 20px;
   user-select: none;
   &:hover {
     transform: scale(1.05);
-    border: 2px solid lightblue;
+    border: 1px solid lightblue;
   }
 }
 
