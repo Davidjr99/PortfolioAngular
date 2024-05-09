@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CarrouselComponent implements OnInit {
 
-  images: string[] = ['../../../assets/figmaImg.png', '../../../assets/Canvaimg-removebg-preview.png', '../../../assets/gitImg-removebg-preview.png', '../../../assets/imggithub-removebg-preview.png', '../../../assets/htmlImg.png', '../../../assets/cssImg-removebg-preview.png', '../../../assets/JavaScript-logo.png', '../../../assets/Typescript_logo_2020.svg-removebg-preview.png', '../../../assets/imgReact-removebg-preview.png', '../../../assets/Angularimg-removebg-preview.png', '../../../assets/springimg-removebg-preview.png', '../../../assets/javaImg-removebg-preview.png', '../../../assets/djangoImg-removebg-preview.png', '../../../assets/pythonImg-removebg-preview.png']; // Adicione os caminhos das suas imagens aqui
+  images: string[] = ['../../../assets/html5.svg','../../../assets/css3.svg', '../../../assets/javascript.svg', '../../../assets/git.svg','../../../assets/github.svg', '../../../assets/json.svg','../../../assets/npm.svg','../../../assets/nodedotjs.svg','../../../assets/python.svg','../../../assets/typescript.svg','../../../assets/react.svg','../../../assets/vuedotjs.svg','../../../assets/angular.svg','../../../assets/springboot.svg','../../../assets/azuredevops.svg','../../../assets/trello.svg', '../../../assets/jira.svg','../../../assets/canva.svg','../../../assets/figma.svg',]; // Adicione os caminhos das suas imagens aqui
   currentImageIndex = 0;
 
   ngOnInit(): void {
@@ -15,7 +15,7 @@ export class CarrouselComponent implements OnInit {
       this.nextImage();
 
       console.log('carosel')
-    }, 1000);
+    }, 2000);
 
   }
 
