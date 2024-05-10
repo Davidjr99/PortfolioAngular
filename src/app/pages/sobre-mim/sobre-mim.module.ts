@@ -18,7 +18,8 @@ import { CarrouselModule } from '../../shared/carrousel/carrousel.module';
     MatCardModule,
     MatButtonModule,
     FlexLayoutModule,
-    CarrouselModule
+    CarrouselModule,
+    MatButtonModule
 
 
   ],
