@@ -20,16 +20,15 @@
   left: 80% ; /* Alinha o elemento no canto direito do contêiner */
   padding: 25px;
   margin-bottom: 5%;
-  font-weight: 900 ;
+  font-size: 15px;
 
 
   &:hover{
    background: linear-gradient(to bottom, transparent, #3f51b5);
   }
-
-
-
-
+}
+.btncurriculum{
+  color: aliceblue;
 }
 
 .conteudoSobreMim {
@@ -359,9 +358,8 @@ mat-card-footer {
     top: 0;
     left: 90px;
     font-size: 15px;
-
-
   }
+
 
   .apresentacao {
     padding: 20px; /* Adjust padding for smaller screens */
