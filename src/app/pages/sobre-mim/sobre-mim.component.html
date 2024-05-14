@@ -48,7 +48,7 @@
 
 </div>
 
-<a mat-stroked-button class="downloadCurriculum"  href="../../../assets/curriculo Daavidjr (2).pdf" target="_blank"> <p class="btncurriculum">Aqui está Meu Curriculo!</p> </a>
+<a mat-stroked-button class="downloadCurriculum"  href="../../../assets/CurriculoDavidJr (1).pdf" target="_blank"> <p class="btncurriculum">Aqui está Meu Curriculo!</p> </a>
 
 
 
@@ -71,7 +71,9 @@
 <h2 class="tituloFormacoes">Minhas Formações:</h2>
 <div class="formacoes">
 
-  <mat-card class="card1">
+  <mat-card class="card1 flip-card" >
+    <div class="flip-card-inner" >
+      <div class="flip-card-front">
     <mat-card-header>
       <img
         class="imgbeca"
@@ -87,9 +89,30 @@
         src="../../../assets/estacioimg-removebg-preview.png"
       />
     </mat-card-footer>
+  </div>
+  <div class="flip-card-back">
+    <mat-card-header>
+      Graduação Tecnológica Em Gestão Da Tecnologia Da Informação
+    </mat-card-header>
+
+    <mat-card-content>
+      Duração: 2,5 anos
+    </mat-card-content>
+
+    <mat-card-footer class="cardBack">
+
+O curso de Gestão da Tecnologia da Informação na Estácio de Carapicuíba capacita profissionais em TI, abordando programação, redes, gestão de projetos e segurança da informação. Os alunos também aprendem sobre análise de sistemas, governança de TI e empreendedorismo, com estágio e projeto final integrando teoria e prática.
+    </mat-card-footer>
+
+  </div>
+
+  </div>
   </mat-card>
 
-  <mat-card class="card2">
+  <mat-card class="card2 flip-card" >
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+
     <mat-card-header>
       <img
         class="imgbeca"
@@ -105,6 +128,24 @@
         src="../../../assets/imgproa-removebg-preview.png"
       />
     </mat-card-footer>
+  </div>
+
+  <div class="flip-card-back">
+    <mat-card-header>
+      Programador Web FullStack Java
+    </mat-card-header>
+
+    <mat-card-content>
+      Duração: 06 Meses
+    </mat-card-content>
+
+    <mat-card-footer class="cardBack">
+      O curso de Desenvolvimento Full Stack Java do Proa prepara profissionais para trabalhar com programação Java em ambientes completos, incluindo tanto o desenvolvimento de sistemas back-end quanto front-end. Os alunos aprendem Java, Spring Boot, bancos de dados SQL, ferramentas web e práticas ágeis, culminando em projetos práticos para aplicação dos conhecimentos.
+    </mat-card-footer>
+
+  </div>
+
+  </div>
   </mat-card>
 
   <mat-card class="card3">
@@ -115,7 +156,7 @@
       />
     </mat-card-header>
 
-    <mat-card-title> Front End Angular </mat-card-title>
+    <mat-card-title class="angular"> Front End Angular </mat-card-title>
 
     <mat-card-footer>
       <img
@@ -133,7 +174,7 @@
       />
     </mat-card-header>
 
-    <mat-card-title> Inglês Para Adultos </mat-card-title>
+    <mat-card-title class="yasigi"> Inglês Para Adultos </mat-card-title>
 
     <mat-card-footer>
       <img

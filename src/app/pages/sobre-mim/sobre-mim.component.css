@@ -14,17 +14,20 @@
 .downloadCurriculum{
   animation: 2s ease-out 0s 1 slideInFromRight;
 
-  background: linear-gradient(to bottom, #3f51b5, transparent);
+  background: linear-gradient(to bottom, #A2D2FF, transparent);
+
 
   top: 0; /* Alinha o elemento no topo do contêiner */
   left: 80% ; /* Alinha o elemento no canto direito do contêiner */
   padding: 25px;
   margin-bottom: 5%;
-  font-size: 15px;
+
 
 
   &:hover{
-   background: linear-gradient(to bottom, transparent, #3f51b5);
+
+   border-bottom: 2px solid rgb(12, 32, 212);
+   border-right: 2px solid rgb(12, 32, 212);
   }
 }
 .btncurriculum{
@@ -37,7 +40,7 @@
   justify-content: center;
   flex-direction: row;
   padding: 120px;
-  background-color: white;
+
   height: 530px;
   width: 90%;
   animation: 2s ease-out 0s 1 slideInFromRight;
@@ -188,6 +191,9 @@ mat-card-title {
   user-select: none;
   padding-top: 100px;
 }
+mat-card-content{
+  padding: 30px;
+}
 mat-card-subtitle {
   display: flex;
   text-align: center;
@@ -198,6 +204,10 @@ mat-card-footer {
   align-items: center;
   user-select: none;
   padding-top: 115px;
+}
+.cardBack{
+  text-align: center;
+  padding: 30px;
 }
 
 .imgbeca {
@@ -230,7 +240,7 @@ mat-card-footer {
   box-shadow: 0px 0px 20px #3f51b5;
   &:hover {
     transform: scale(1.05);
-    border: 1px solid #3f51b5;
+    border: 1px solid lightblue;
     background: linear-gradient(to bottom, #6699CC, transparent);
   }
 }
@@ -243,7 +253,7 @@ mat-card-footer {
   border-radius: 20px;
   &:hover {
     transform: scale(1.05);
-    border: 1px solid #3f51b5;
+    border: 1px solid lightblue;
     background: linear-gradient(to bottom, #6699CC, transparent);
   }
   user-select: none;
@@ -258,7 +268,7 @@ mat-card-footer {
   user-select: none;
   &:hover {
     transform: scale(1.05);
-    border: 1px solid #3f51b5;
+    border: 1px solid lightblue;
     background: linear-gradient(to bottom, #6699CC, transparent);
   }
   user-select: none;
@@ -269,7 +279,7 @@ mat-card-footer {
   height: 500px;
   width: 330px;
   background: linear-gradient(to bottom, #3f51b5, transparent);
-  box-shadow: 0px 0px 20px #6699CC;
+  box-shadow: 0px 0px 20px #3f51b5;
   border-radius: 20px;
   user-select: none;
   &:hover {
@@ -277,6 +287,36 @@ mat-card-footer {
     border: 1px solid lightblue;
     background: linear-gradient(to bottom, #6699CC, transparent);
   }
+}
+
+.flip-card {
+  background-color: transparent;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
 }
 
 @keyframes slideInFromRight {
@@ -356,8 +396,13 @@ mat-card-footer {
   .downloadCurriculum{
     align-items: center;
     top: 0;
-    left: 90px;
-    font-size: 15px;
+    left: 100px;
+    font-size: 10px;
+    height: 10px;
+    width: 220px;
+  }
+  .downloadCurriculum::active{
+    border: 2px dotted #3f51b5 !important;
   }
 
 
@@ -393,7 +438,7 @@ mat-card-footer {
   .card2,
   .card3,
   .card4 {
-    height: 300px; /* Adjust card height for smaller screens */
+    height: 250px; /* Adjust card height for smaller screens */
     width: 300px; /* Adjust card width for smaller screens */
     margin: 25px;
     flex-wrap: wrap;
@@ -415,15 +460,21 @@ mat-card-footer {
     width: 120px; /* Adjust image width for smaller screens */
     display: flex;
     justify-content: center;
-    flex-flow: column;
     height: 90px;
   }
 
 
 
   mat-card-title {
+    position: absolute;
     text-align: center;
-    padding: 15%;
+    justify-content: center;
+  }
+  .angular{
+    padding-left: 17%;
+  }
+  .yasigi{
+    padding-left: 15%;
   }
   mat-card-footer{
     position: absolute; /* Adicione position: absolute; */

@@ -41,6 +41,13 @@ export class SobreMimComponent {
       link.click();
       document.body.removeChild(link);
     }
+
+    flipCard(event: Event) {
+      const card = (event.target as Element).closest('.card');
+      if (card) {
+        card.classList.toggle('flipped');
+      }
+    }
   }
 
 
