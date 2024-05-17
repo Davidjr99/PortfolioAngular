@@ -1,16 +1,15 @@
-
 <app-carrousel class="carrousel"></app-carrousel>
 
-
-<div class="conteudoSobreMim"  >
-
-
-
-  <img class="perfil" src="../../../assets/imgEu.png" alt="imgPerfil" style="max-width: 100%;"/>
+<div class="conteudoSobreMim">
+  <img
+    class="perfil"
+    src="../../../assets/imgEu.png"
+    alt="imgPerfil"
+    style="max-width: 100%"
+  />
 
   <div class="minhasInfos">
-
-    <h2>{{name}}</h2>
+    <h2>{{ name }}</h2>
 
     <ul class="minhasContas">
       <li>
@@ -40,115 +39,109 @@
           />
         </a>
       </li>
-
-
-
     </ul>
   </div>
-
 </div>
 
-<a mat-stroked-button class="downloadCurriculum"  href="../../../assets/CurriculoDavidJr (1).pdf" target="_blank"> <p class="btncurriculum">Aqui está Meu Curriculo!</p> </a>
-
-
+<a
+  mat-stroked-button
+  class="downloadCurriculum"
+  href="../../../assets/CurriculoDavidJr (1).pdf"
+  target="_blank"
+>
+  <p class="btncurriculum">Aqui está Meu Curriculo!</p>
+</a>
 
 <div class="apresentacao" fxLayout="column" fxLayoutAlign="start stretch">
-
-
-
   <mat-card class="apresentacao">
     <h1 class="tituloSobreMim">Sobre Mim:</h1>
     <mat-card-subtitle class="textoSobreMim">
-    {{sobreMim}}
+      {{ sobreMim }}
     </mat-card-subtitle>
-
   </mat-card>
-
 </div>
-
-
 
 <h2 class="tituloFormacoes">Minhas Formações:</h2>
 <div class="formacoes">
-
-  <mat-card class="card1 flip-card" >
-    <div class="flip-card-inner" >
+  <mat-card class="card1 flip-card">
+    <div class="flip-card-inner">
       <div class="flip-card-front">
-    <mat-card-header>
-      <img
-        class="imgbeca"
-        src="../../../assets/imgEstacio-removebg-preview.png"
-      />
-    </mat-card-header>
+        <mat-card-header>
+          <img
+            class="imgbeca"
+            src="../../../assets/imgEstacio-removebg-preview.png"
+          />
+        </mat-card-header>
 
-    <mat-card-title> Gestão Da Tecnologia  Da  Informação </mat-card-title>
+        <mat-card-title> Gestão Da Tecnologia Da Informação </mat-card-title>
 
-    <mat-card-footer>
-      <img
-        class="imglogoEstacio"
-        src="../../../assets/estacioimg-removebg-preview.png"
-      />
-    </mat-card-footer>
-  </div>
-  <div class="flip-card-back">
-    <mat-card-header>
-      Graduação Tecnológica Em Gestão Da Tecnologia Da Informação
-    </mat-card-header>
+        <mat-card-footer>
+          <img
+            class="imglogoEstacio"
+            src="../../../assets/estacioimg-removebg-preview.png"
+          />
+        </mat-card-footer>
+      </div>
+      <div class="flip-card-back">
+        <mat-card-header>
+          Graduação Tecnológica Em Gestão Da Tecnologia Da Informação
+        </mat-card-header>
 
-    <mat-card-content>
-      Duração: 2,5 anos
-    </mat-card-content>
+        <mat-card-content> Duração: 2,5 anos </mat-card-content>
 
-    <mat-card-footer class="cardBack">
-
-O curso de Gestão da Tecnologia da Informação na Estácio de Carapicuíba capacita profissionais em TI, abordando programação, redes, gestão de projetos e segurança da informação. Os alunos também aprendem sobre análise de sistemas, governança de TI e empreendedorismo, com estágio e projeto final integrando teoria e prática.
-    </mat-card-footer>
-
-  </div>
-
-  </div>
+        <mat-card-footer>
+          O curso de Gestão da Tecnologia da Informação na Estácio de
+          Carapicuíba capacita profissionais em TI, abordando programação,
+          redes, gestão de projetos e segurança da informação. Os alunos também
+          aprendem sobre análise de sistemas, governança de TI e
+          empreendedorismo, com estágio e projeto final integrando teoria e
+          prática.
+        </mat-card-footer>
+      </div>
+    </div>
   </mat-card>
 
-  <mat-card class="card2 flip-card" >
+  <mat-card class="card2 flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <mat-card-header>
+          <img
+            class="imgbeca"
+            src="../../../assets/imgEstacio-removebg-preview.png"
+          />
+        </mat-card-header>
+
+        <mat-card-title> Desenvolvimento FullStack </mat-card-title>
+
+        <mat-card-footer>
+          <img
+            class="imglogoproa"
+            src="../../../assets/imgproa-removebg-preview.png"
+          />
+        </mat-card-footer>
+      </div>
+
+      <div class="flip-card-back">
+        <mat-card-header> Programador Web FullStack Java </mat-card-header>
+
+        <mat-card-content> Duração: 06 Meses </mat-card-content>
+
+        <mat-card-footer >
+          O curso de Desenvolvimento Full Stack Java do Proa prepara
+          profissionais para trabalhar com programação Java em ambientes
+          completos, incluindo tanto o desenvolvimento de sistemas back-end
+          quanto front-end. Os alunos aprendem Java, Spring Boot, bancos de
+          dados SQL, ferramentas web e práticas ágeis, culminando em projetos
+          práticos para aplicação dos conhecimentos.
+        </mat-card-footer>
+      </div>
+    </div>
+  </mat-card>
+
+  <mat-card class="card3 flip-card">
     <div class="flip-card-inner">
       <div class="flip-card-front">
 
-    <mat-card-header>
-      <img
-        class="imgbeca"
-        src="../../../assets/imgEstacio-removebg-preview.png"
-      />
-    </mat-card-header>
-
-    <mat-card-title> Desenvolvimento FullStack </mat-card-title>
-
-    <mat-card-footer>
-      <img
-        class="imglogoproa"
-        src="../../../assets/imgproa-removebg-preview.png"
-      />
-    </mat-card-footer>
-  </div>
-
-  <div class="flip-card-back">
-    <mat-card-header>
-      Programador Web FullStack Java
-    </mat-card-header>
-
-    <mat-card-content>
-      Duração: 06 Meses
-    </mat-card-content>
-
-    <mat-card-footer class="cardBack">
-      O curso de Desenvolvimento Full Stack Java do Proa prepara profissionais para trabalhar com programação Java em ambientes completos, incluindo tanto o desenvolvimento de sistemas back-end quanto front-end. Os alunos aprendem Java, Spring Boot, bancos de dados SQL, ferramentas web e práticas ágeis, culminando em projetos práticos para aplicação dos conhecimentos.
-    </mat-card-footer>
-
-  </div>
-
-  </div>
-  </mat-card>
-
-  <mat-card class="card3">
     <mat-card-header>
       <img
         class="imgbeca"
@@ -164,9 +157,29 @@ O curso de Gestão da Tecnologia da Informação na Estácio de Carapicuíba cap
         src="../../../assets/imgsenac-removebg-preview.png"
       />
     </mat-card-footer>
+  </div>
+
+  <div class="flip-card-back">
+    <mat-card-header>
+      Interfaces Front End: Angular
+    </mat-card-header>
+
+    <mat-card-content>
+      Duração: 05 Meses
+    </mat-card-content>
+
+    <mat-card-footer class="textcardback">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus quod minima impedit ad rem tenetur fugiat! Alias aperiam nostrum soluta, nihil debitis voluptatem n
+    </mat-card-footer>
+
+  </div>
+
+  </div>
   </mat-card>
 
-  <mat-card class="card4">
+  <mat-card class="card4 flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
     <mat-card-header>
       <img
         class="imgbeca"
@@ -179,9 +192,24 @@ O curso de Gestão da Tecnologia da Informação na Estácio de Carapicuíba cap
     <mat-card-footer>
       <img
         class="imglogo"
-
         src="../../../assets/imgyasigi-removebg-preview.png"
       />
     </mat-card-footer>
+  </div>
+  <div class="flip-card-back">
+    <mat-card-header>
+      Inglês Pré Intermediario
+    </mat-card-header>
+
+    <mat-card-content>
+      Duração: 01 ano
+    </mat-card-content>
+
+    <mat-card-footer class="textcardback">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto veniam dolorum sunt explicabo alias quasi reiciendis, nobis omnis placeat illo est voluptatum eius voluptatem aliquam sint odio, dolores dolore! Soluta?
+    </mat-card-footer>
+  </div>
+
+  </div>
   </mat-card>
 </div>

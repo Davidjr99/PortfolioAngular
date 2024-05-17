@@ -13,25 +13,20 @@
 }
 .downloadCurriculum{
   animation: 2s ease-out 0s 1 slideInFromRight;
-
   background: linear-gradient(to bottom, #A2D2FF, transparent);
-
-
   top: 0; /* Alinha o elemento no topo do contêiner */
   left: 80% ; /* Alinha o elemento no canto direito do contêiner */
   padding: 25px;
   margin-bottom: 5%;
 
-
-
   &:hover{
 
-   border-bottom: 2px solid rgb(12, 32, 212);
-   border-right: 2px solid rgb(12, 32, 212);
+   background: linear-gradient(to bottom, transparent , #A2D2FF);
+   border: 1px solid #3f51b5;
   }
 }
 .btncurriculum{
-  color: aliceblue;
+  color: black;
 }
 
 .conteudoSobreMim {
@@ -192,7 +187,10 @@ mat-card-title {
   padding-top: 100px;
 }
 mat-card-content{
-  padding: 30px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 0%;
 }
 mat-card-subtitle {
   display: flex;
@@ -205,7 +203,7 @@ mat-card-footer {
   user-select: none;
   padding-top: 115px;
 }
-.cardBack{
+.flip-card-back{
   text-align: center;
   padding: 30px;
 }
@@ -398,11 +396,17 @@ mat-card-footer {
     top: 0;
     left: 100px;
     font-size: 10px;
-    height: 10px;
-    width: 220px;
-  }
-  .downloadCurriculum::active{
+   
+    width: 190px;
+  
+  &:active{
     border: 2px dotted #3f51b5 !important;
+
+  }
+    
+  }
+  .btncurriculum{
+    padding: 0;
   }
 
 
@@ -438,7 +442,7 @@ mat-card-footer {
   .card2,
   .card3,
   .card4 {
-    height: 250px; /* Adjust card height for smaller screens */
+    height: 350px; /* Adjust card height for smaller screens */
     width: 300px; /* Adjust card width for smaller screens */
     margin: 25px;
     flex-wrap: wrap;
@@ -472,6 +476,8 @@ mat-card-footer {
   }
   .angular{
     padding-left: 17%;
+    
+    
   }
   .yasigi{
     padding-left: 15%;
@@ -481,6 +487,17 @@ mat-card-footer {
     bottom: 0; /* Alinhe o rodapé ao final do card */
     left: 0; /* Alinhe o rodapé à esquerda do card */
     width: 100%; /* Defina a largura para ocupar todo o card */
+    padding: 0;
+  }
+
+  .flip-card-back{
+    bottom: 10px;
+    
+  }
+  .textcardback{
+    padding-bottom: 60px;
+   
+
   }
 
 }
